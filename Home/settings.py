@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-e&6i34s3i!=001uk6ld&n8v4)x_xmbv2+(+ncae0e&l81v6%&(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [ 'delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.net',
+    'localhost',
+    '127.0.0.1',]
 
 
 # Application definition
@@ -84,7 +86,12 @@ WSGI_APPLICATION = 'Home.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = db.MYSQL
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 
 # Password validation
