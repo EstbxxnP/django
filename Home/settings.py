@@ -31,6 +31,15 @@ ALLOWED_HOSTS = [ 'delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.n
     'localhost',
     '127.0.0.1',]
 
+# Allow CSRF 
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.net',
+]
+
+CSRF_COOKIE_DOMAIN = 'https://delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.net'
+
+CSRF_COOKIE_SECURE = True
 
 # Application definition
 
