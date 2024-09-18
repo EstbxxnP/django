@@ -83,7 +83,14 @@
 
                     {% if user.is_authenticated %}
 
-                        {% if user.email == 'auxiliarventas@delacascada.com' or user.email == 'asistenteventas@delacascada.com' %}
+                        {% if user.email == 'instructor@example.com' %}
+
+                            <a href="{% url 'dashventas' %}"><button class="hidden">Ir a ventas</button></a>
+                            <a href="{% url 'dashproduccion' %}"><button class="hidden">Ir a mi producción</button></a>
+                            <a href="{% url 'dashinventario' %}"><button class="hidden">Ir a inventario</button></a>
+
+
+                        {% elif user.email == 'auxiliarventas@delacascada.com' or user.email == 'asistenteventas@delacascada.com' %}
                             
                             <a href="{% url 'dashventas' %}"><button class="hidden">Ir a mi módulo</button></a>
 
