@@ -94,7 +94,7 @@ def signin(request):
             if email == 'jefeproduccion@delacascada.com':
                 return redirect('dashproduccion')
             
-            return redirect('dashcarrito') 
+            return redirect('Tienda') 
         
         else:
             msg = 'Error Login'
