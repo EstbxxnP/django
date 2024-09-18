@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-e&6i34s3i!=001uk6ld&n8v4)x_xmbv2+(+ncae0e&l81v6%&('
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [ 'delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.net',
     'localhost',
@@ -39,7 +39,13 @@ CSRF_TRUSTED_ORIGINS = [
 
 CSRF_COOKIE_DOMAIN = 'https://delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.net'
 
+SESSION_COOKIE_DOMAIN = 'https://delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.net'
+
 CSRF_COOKIE_SECURE = True
+
+SESSION_COOKIE_SECURE = True
+
+
 
 # Application definition
 
