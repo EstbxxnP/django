@@ -37,9 +37,9 @@ CSRF_TRUSTED_ORIGINS = [
     'https://delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.net',
 ]
 
-CSRF_COOKIE_DOMAIN = 'https://delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.net'
+CSRF_COOKIE_DOMAIN = 'delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.net'
 
-SESSION_COOKIE_DOMAIN = 'https://delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.net'
+SESSION_COOKIE_DOMAIN = 'delacascada-django-dbhqajbcgkbdcwae.eastus-01.azurewebsites.net'
 
 CSRF_COOKIE_SECURE = True
 
